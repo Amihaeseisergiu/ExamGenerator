@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.responsive-btn {
+  overflow: hidden;
+  white-space: normal;
+  word-wrap: break-word;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
+
+.responsive-badge {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .responsive-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+  }
+}
